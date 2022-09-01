@@ -1,15 +1,21 @@
 <p id="notice"><%= notice %></p>
+<div id="header">
+	<div class="row" style="margin-left : 31px;">
+		<div class="col">
+			<h1 style="font-family : 'Black Han Sans'">NewBietop's Shop</h1>
+		</div>
+		<div class="col" style="text-align: right; margin-top: 10px; margin-right: 60px;">
 
-<% if user_signed_in? %>
-	<p> <%= current_user.email %> 님 안녕하세요. </p>	
-	<%= link_to "로그아웃", destroy_user_session_path, method: :delete %>
-<% else %>
-	<%= link_to "로그인", user_session_path %>
-<% end %>
-
-<h1>Posts</h1>
-
-<table>
+			<% if user_signed_in? %>
+				<p> <%= current_user.email %> 님 안녕하세요. </p>	
+				<%= link_to "로그아웃", destroy_user_session_path, method: :delete %>
+			<% else %>
+				<%= link_to "로그인", user_session_path %>
+			<% end %>
+		</div>
+	</div>
+</div>
+<!--<table>
   <thead>
     <tr>
       <th>Title</th>
@@ -17,8 +23,7 @@
       <th colspan="3"></th>
     </tr>
   </thead>
-
-  <tbody>
+ <tbody>
     <% @posts.each do |post| %>
       <tr>
         <td><%= post.title %></td>
@@ -29,8 +34,42 @@
       </tr>
     <% end %>
   </tbody>
-</table>
+</table> -->
 
-<br>
+<!-- <br> -->
 
-<%= link_to 'New Post', new_post_path %>
+<!--<%= link_to 'New Post', new_post_path %> -->
+<div class="px-5">
+	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+	  <div class="carousel-indicators">
+		<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	  </div>
+	  <div class="carousel-inner">
+		<div class="carousel-item active">
+		  <img src="https://c.pxhere.com/photos/b7/54/pink_hair_hairstyle_women_young_women_modern_human_face_fashion_model_females-606493.jpg!d" class="d-block w-100" alt="...">
+		</div>
+		<div class="carousel-item">
+		  <img src="https://c.pxhere.com/photos/3a/d4/woman_hat_pearls_blonde_hede_eyes_face_skin_the_shade_of_nude-1167943.jpg!d" class="d-block w-100" alt="...">
+		</div>
+		<div class="carousel-item">
+		  <img src="https://c.pxhere.com/photos/4b/92/smart_watch_apple_technology_style_fashion_smart_mobile_display-714160.jpg!d"  class="d-block w-100" alt="...">
+		</div>
+	  </div>
+	  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Previous</span>
+	  </button>
+	  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Next</span>
+	  </button>
+	</div>
+</div>
+
+<%= render 'layout', post: @post %>
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script> -->

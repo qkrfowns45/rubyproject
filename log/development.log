@@ -463,3 +463,918 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 73ms (Views: 8.0ms | ActiveRecord: 63.4ms | Allocations: 5964)
 
 
+Started GET "/?t=1662000647086" for 172.17.0.1 at 2022-09-01 02:50:47 +0000
+Cannot render console from 10.1.20.90! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (6.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662000647086"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:22
+  Rendered posts/index.html.erb within layouts/application (Duration: 17.2ms | Allocations: 5560)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+
+/workspace/railsPrj/node_modules/webpack-cli/bin/cli.js:93
+				throw err;
+				^
+YAMLException: duplicated mapping key at line 98, column -19:
+    default: &default  
+    ^
+    at generateError (/workspace/railsPrj/node_modules/js-yaml/lib/js-yaml/loader.js:167:10)
+    at throwError (/workspace/railsPrj/node_modules/js-yaml/lib/js-yaml/loader.js:173:9)
+    at storeMappingPair (/workspace/railsPrj/node_modules/js-yaml/lib/js-yaml/loader.js:335:7)
+    at readBlockMapping (/workspace/railsPrj/node_modules/js-yaml/lib/js-yaml/loader.js:1098:9)
+    at composeNode (/workspace/railsPrj/node_modules/js-yaml/lib/js-yaml/loader.js:1359:12)
+    at readDocument (/workspace/railsPrj/node_modules/js-yaml/lib/js-yaml/loader.js:1525:3)
+    at loadDocuments (/workspace/railsPrj/node_modules/js-yaml/lib/js-yaml/loader.js:1588:5)
+    at load (/workspace/railsPrj/node_modules/js-yaml/lib/js-yaml/loader.js:1614:19)
+    at safeLoad (/workspace/railsPrj/node_modules/js-yaml/lib/js-yaml/loader.js:1637:10)
+    at Object.<anonymous> (/workspace/railsPrj/node_modules/@rails/webpacker/package/env.js:12:16)
+    at Module._compile (/workspace/railsPrj/node_modules/v8-compile-cache/v8-compile-cache.js:194:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
+    at Module.load (internal/modules/cjs/loader.js:986:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
+    at Module.require (internal/modules/cjs/loader.js:1026:19)
+    at require (/workspace/railsPrj/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/workspace/railsPrj/node_modules/@rails/webpacker/package/config.js:6:22)
+    at Module._compile (/workspace/railsPrj/node_modules/v8-compile-cache/v8-compile-cache.js:194:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
+    at Module.load (internal/modules/cjs/loader.js:986:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
+    at Module.require (internal/modules/cjs/loader.js:1026:19)
+    at require (/workspace/railsPrj/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/workspace/railsPrj/node_modules/@rails/webpacker/package/rules/babel.js:2:91)
+    at Module._compile (/workspace/railsPrj/node_modules/v8-compile-cache/v8-compile-cache.js:194:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
+    at Module.load (internal/modules/cjs/loader.js:986:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
+    at Module.require (internal/modules/cjs/loader.js:1026:19)
+    at require (/workspace/railsPrj/node_modules/v8-compile-cache/v8-compile-cache.js:161:20) {
+  reason: 'duplicated mapping key',
+  mark: Mark {
+    name: null,
+    buffer: '# Note: You must restart bin/webpack-dev-server for changes to take effect\n' +
+      '\n' +
+      'default: &default\n' +
+      '  source_path: app/javascript\n' +
+      '  source_entry_path: packs\n' +
+      '  public_root_path: public\n' +
+      '  public_output_path: packs\n' +
+      '  cache_path: tmp/cache/webpacker\n' +
+      '  check_yarn_integrity: false\n' +
+      '  webpack_compile_output: true\n' +
+      '\n' +
+      '  # Additional paths webpack should lookup modules\n' +
+      "  # ['app/assets', 'engine/foo/app/assets']\n" +
+      '  resolved_paths: []\n' +
+      '\n' +
+      '  # Reload manifest.json on all requests so we reload latest compiled packs\n' +
+      '  cache_manifest: false\n' +
+      '\n' +
+      '  # Extract and emit a css file\n' +
+      '  extract_css: false\n' +
+      '\n' +
+      '  static_assets_extensions:\n' +
+      '    - .jpg\n' +
+      '    - .jpeg\n' +
+      '    - .png\n' +
+      '    - .gif\n' +
+      '    - .tiff\n' +
+      '    - .ico\n' +
+      '    - .svg\n' +
+      '    - .eot\n' +
+      '    - .otf\n' +
+      '    - .ttf\n' +
+      '    - .woff\n' +
+      '    - .woff2\n' +
+      '\n' +
+      '  extensions:\n' +
+      '    - .mjs\n' +
+      '    - .js\n' +
+      '    - .sass\n' +
+      '    - .scss\n' +
+      '    - .css\n' +
+      '    - .module.sass\n' +
+      '    - .module.scss\n' +
+      '    - .module.css\n' +
+      '    - .png\n' +
+      '    - .svg\n' +
+      '    - .gif\n' +
+      '    - .jpeg\n' +
+      '    - .jpg\n' +
+      '\n' +
+      'development:\n' +
+      '  <<: *default\n' +
+      '  compile: true\n' +
+      '\n' +
+      '  # Verifies that correct packages and versions are installed by inspecting package.json, yarn.lock, and node_modules\n' +
+      '  check_yarn_integrity: true\n' +
+      '\n' +
+      '  # Reference: https://webpack.js.org/configuration/dev-server/\n' +
+      '  dev_server:\n' +
+      '    https: false\n' +
+      '    host: localhost\n' +
+      '    port: 3035\n' +
+      '    public: localhost:3035\n' +
+      '    hmr: false\n' +
+      '    # Inline should be set to true if using HMR\n' +
+      '    inline: true\n' +
+      '    overlay: true\n' +
+      '    compress: true\n' +
+      '    disable_host_check: true\n' +
+      '    use_local_ip: false\n' +
+      '    quiet: false\n' +
+      '    pretty: false\n' +
+      '    headers:\n' +
+      "      'Access-Control-Allow-Origin': '*'\n" +
+      '    watch_options:\n' +
+      "      ignored: '**/node_modules/**'\n" +
+      '\n' +
+      '\n' +
+      'test:\n' +
+      '  <<: *default\n' +
+      '  compile: true\n' +
+      '\n' +
+      '  # Compile test packs to a separate directory\n' +
+      '  public_output_path: packs-test\n' +
+      '\n' +
+      'production:\n' +
+      '  <<: *default\n' +
+      '\n' +
+      '  # Production depends on precompilation of packs prior to booting for performance.\n' +
+      '  compile: false\n' +
+      '\n' +
+      '  # Extract and emit a css file\n' +
+      '  extract_css: true\n' +
+      '\n' +
+      '  # Cache manifest.json for performance\n' +
+      '  cache_manifest: true\n' +
+      '  \n' +
+      'default: &default  \n' +
+      'source_path: app/frontend # Change here\n' +
+      '\u0000',
+    position: 1957,
+    line: 97,
+    column: -20
+  }
+}
+
+Completed 200 OK in 7687ms (Views: 7519.4ms | ActiveRecord: 1.2ms | Allocations: 33131)
+
+
+Started GET "/posts/1" for 172.17.0.1 at 2022-09-01 02:51:18 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:67:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 276)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 200ms (Views: 7.5ms | ActiveRecord: 0.2ms | Allocations: 10501)
+
+
+Started GET "/posts" for 172.17.0.1 at 2022-09-01 02:51:21 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:22
+  Rendered posts/index.html.erb within layouts/application (Duration: 62.7ms | Allocations: 963)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 69ms (Views: 68.1ms | ActiveRecord: 0.2ms | Allocations: 5225)
+
+
+Started GET "/posts/new" for 172.17.0.1 at 2022-09-01 02:51:23 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 983.6ms | Allocations: 96515)
+  Rendered posts/new.html.erb within layouts/application (Duration: 985.0ms | Allocations: 96882)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 990ms (Views: 989.3ms | ActiveRecord: 0.0ms | Allocations: 101297)
+
+
+Started GET "/posts" for 172.17.0.1 at 2022-09-01 02:51:26 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:22
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 955)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 87ms (Views: 5.8ms | ActiveRecord: 0.1ms | Allocations: 5210)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2022-09-01 02:51:27 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering /usr/local/lib/ruby/gems/2.6.0/gems/devise-4.8.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/devise-4.8.1/app/views/devise/shared/_links.html.erb (Duration: 2.5ms | Allocations: 632)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/devise-4.8.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 78.5ms | Allocations: 3705)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 114ms (Views: 88.6ms | ActiveRecord: 0.9ms | Allocations: 15941)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:19:41 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:22
+  Rendered posts/index.html.erb within layouts/application (Duration: 79.1ms | Allocations: 5407)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7695ms (Views: 7602.6ms | ActiveRecord: 1.2ms | Allocations: 34086)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:20:39 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:22
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1321)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.1ms | Allocations: 6850)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:20:57 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (20.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:22
+  Rendered posts/index.html.erb within layouts/application (Duration: 24.6ms | Allocations: 1314)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 18.3ms | ActiveRecord: 20.2ms | Allocations: 6835)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:21:12 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:22
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1313)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.1ms | Allocations: 6828)
+
+
+Started GET "/posts/1" for 172.17.0.1 at 2022-09-01 03:21:38 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:67:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 270)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 79ms (Views: 13.1ms | ActiveRecord: 0.2ms | Allocations: 10252)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:22:49 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:22
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 1324)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.1ms | Allocations: 6840)
+
+
+Started GET "/..." for 172.17.0.1 at 2022-09-01 03:22:49 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+actionpack (6.0.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.0.5.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:23:50 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (80.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:22
+  Rendered posts/index.html.erb within layouts/application (Duration: 83.6ms | Allocations: 1347)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 91ms (Views: 8.7ms | ActiveRecord: 80.9ms | Allocations: 6923)
+
+
+Started GET "/..." for 172.17.0.1 at 2022-09-01 03:23:50 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+actionpack (6.0.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.0.5.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:23:53 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (47.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:22
+  Rendered posts/index.html.erb within layouts/application (Duration: 49.1ms | Allocations: 958)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 54ms (Views: 5.5ms | ActiveRecord: 47.5ms | Allocations: 5253)
+
+
+Started GET "/..." for 172.17.0.1 at 2022-09-01 03:23:53 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+actionpack (6.0.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.0.5.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:27:23 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:22
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1322)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 92ms (Views: 7.9ms | ActiveRecord: 0.1ms | Allocations: 6842)
+
+
+Started GET "/..." for 172.17.0.1 at 2022-09-01 03:27:23 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+actionpack (6.0.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.0.5.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:28:58 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:22
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1322)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 6831)
+
+
+Started GET "/..." for 172.17.0.1 at 2022-09-01 03:28:58 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+actionpack (6.0.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.0.5.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:30:27 +0000
+Cannot render console from 10.1.20.90! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:22
+  Rendered posts/index.html.erb within layouts/application (Duration: 61.4ms | Allocations: 1332)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 68ms (Views: 67.2ms | ActiveRecord: 0.1ms | Allocations: 6872)
+
+
+Started GET "/..." for 172.17.0.1 at 2022-09-01 03:30:27 +0000
+Cannot render console from 10.1.20.90! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+actionpack (6.0.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.0.5.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:31:18 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:22
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1322)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.1ms | Allocations: 6842)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:36:54 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:22
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1355)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.2ms | Allocations: 6880)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:39:18 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:22
+  Rendered posts/_layout.html.erb (Duration: 1597.2ms | Allocations: 266735)
+  Rendered posts/index.html.erb within layouts/application (Duration: 1650.2ms | Allocations: 268289)
+Completed 500 Internal Server Error in 1653ms (ActiveRecord: 0.1ms | Allocations: 270026)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:0x000055af5ab395e8>:0x000055af5ab1e950>
+Did you mean?  @posts):
+    1: <%= form_with(model: post, local: true) do |layout| %>
+    2:  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    3:  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    4:  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  
+app/views/posts/_layout.html.erb:1
+app/views/posts/index.html.erb:66
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:39:51 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (9.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:22
+  Rendered posts/_layout.html.erb (Duration: 1.3ms | Allocations: 840)
+  Rendered posts/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 2387)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 9.7ms | ActiveRecord: 9.9ms | Allocations: 7907)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:40:28 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (14.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:22
+  Rendered posts/_layout.html.erb (Duration: 0.7ms | Allocations: 335)
+  Rendered posts/index.html.erb within layouts/application (Duration: 17.5ms | Allocations: 1884)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 8.5ms | ActiveRecord: 14.2ms | Allocations: 7399)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:40:46 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (72.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:22
+  Rendered posts/_layout.html.erb (Duration: 0.7ms | Allocations: 335)
+  Rendered posts/index.html.erb within layouts/application (Duration: 75.7ms | Allocations: 1884)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 82ms (Views: 8.7ms | ActiveRecord: 72.4ms | Allocations: 7411)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:40:52 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:22
+  Rendered posts/_layout.html.erb (Duration: 0.8ms | Allocations: 335)
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1882)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 78ms (Views: 9.1ms | ActiveRecord: 0.2ms | Allocations: 7394)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:40:54 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (82.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:22
+  Rendered posts/_layout.html.erb (Duration: 0.4ms | Allocations: 216)
+  Rendered posts/index.html.erb within layouts/application (Duration: 84.4ms | Allocations: 1243)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 89ms (Views: 6.0ms | ActiveRecord: 82.3ms | Allocations: 5537)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:41:07 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (86.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:22
+  Rendered posts/_layout.html.erb (Duration: 0.8ms | Allocations: 335)
+  Rendered posts/index.html.erb within layouts/application (Duration: 90.3ms | Allocations: 1882)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 97ms (Views: 9.9ms | ActiveRecord: 86.2ms | Allocations: 7391)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:41:18 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (84.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:22
+  Rendered posts/_layout.html.erb (Duration: 0.7ms | Allocations: 334)
+  Rendered posts/index.html.erb within layouts/application (Duration: 87.7ms | Allocations: 1881)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 94ms (Views: 8.8ms | ActiveRecord: 84.3ms | Allocations: 7402)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:42:19 +0000
+Cannot render console from 10.1.20.90! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:21
+  Rendered posts/_layout.html.erb (Duration: 1.0ms | Allocations: 342)
+  Rendered posts/index.html.erb within layouts/application (Duration: 10.9ms | Allocations: 1889)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.1ms | Allocations: 7410)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:46:12 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (69.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:21
+  Rendered posts/_layout.html.erb (Duration: 0.7ms | Allocations: 334)
+  Rendered posts/index.html.erb within layouts/application (Duration: 72.6ms | Allocations: 1886)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 79ms (Views: 9.1ms | ActiveRecord: 69.0ms | Allocations: 7411)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:51:18 +0000
+Cannot render console from 10.1.20.90! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:21
+  Rendered posts/_layout.html.erb (Duration: 0.8ms | Allocations: 336)
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1885)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.2ms | Allocations: 7398)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:51:34 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (39.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:21
+  Rendered posts/_layout.html.erb (Duration: 0.4ms | Allocations: 216)
+  Rendered posts/index.html.erb within layouts/application (Duration: 41.2ms | Allocations: 1244)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 6.0ms | ActiveRecord: 39.0ms | Allocations: 5536)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:54:27 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (32.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:21
+  Rendered posts/_layout.html.erb (Duration: 0.7ms | Allocations: 335)
+  Rendered posts/index.html.erb within layouts/application (Duration: 35.5ms | Allocations: 1887)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 8.8ms | ActiveRecord: 32.0ms | Allocations: 7396)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:54:40 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (91.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:21
+  Rendered posts/_layout.html.erb (Duration: 0.8ms | Allocations: 335)
+  Rendered posts/index.html.erb within layouts/application (Duration: 95.3ms | Allocations: 1887)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 102ms (Views: 9.4ms | ActiveRecord: 91.6ms | Allocations: 7396)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:54:51 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:21
+  Rendered posts/_layout.html.erb (Duration: 0.7ms | Allocations: 335)
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1886)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 16.4ms | ActiveRecord: 0.1ms | Allocations: 7401)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:54:54 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:21
+  Rendered posts/_layout.html.erb (Duration: 0.4ms | Allocations: 216)
+  Rendered posts/index.html.erb within layouts/application (Duration: 92.5ms | Allocations: 1244)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 97ms (Views: 96.4ms | ActiveRecord: 0.1ms | Allocations: 5532)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 03:59:43 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:25
+  Rendered posts/_layout.html.erb (Duration: 0.8ms | Allocations: 335)
+  Rendered posts/index.html.erb within layouts/application (Duration: 80.7ms | Allocations: 1906)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 88ms (Views: 86.6ms | ActiveRecord: 0.1ms | Allocations: 7409)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 04:01:50 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:27
+  Rendered posts/_layout.html.erb (Duration: 0.7ms | Allocations: 335)
+  Rendered posts/index.html.erb within layouts/application (Duration: 56.9ms | Allocations: 1902)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 64ms (Views: 62.5ms | ActiveRecord: 0.1ms | Allocations: 7409)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2022-09-01 04:02:14 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering /usr/local/lib/ruby/gems/2.6.0/gems/devise-4.8.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/devise-4.8.1/app/views/devise/shared/_links.html.erb (Duration: 1.7ms | Allocations: 633)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/devise-4.8.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 221.2ms | Allocations: 34723)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 241ms (Views: 229.4ms | ActiveRecord: 1.6ms | Allocations: 46887)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 04:05:58 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:27
+  Rendered posts/_layout.html.erb (Duration: 0.7ms | Allocations: 335)
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1899)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.1ms | Allocations: 7410)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 04:06:21 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (60.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:27
+  Rendered posts/_layout.html.erb (Duration: 0.7ms | Allocations: 335)
+  Rendered posts/index.html.erb within layouts/application (Duration: 64.1ms | Allocations: 1899)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 71ms (Views: 9.4ms | ActiveRecord: 60.3ms | Allocations: 7412)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 04:06:52 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:27
+  Rendered posts/_layout.html.erb (Duration: 0.6ms | Allocations: 335)
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1898)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.1ms | Allocations: 7401)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 04:06:54 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (61.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:27
+  Rendered posts/_layout.html.erb (Duration: 0.4ms | Allocations: 216)
+  Rendered posts/index.html.erb within layouts/application (Duration: 63.3ms | Allocations: 1243)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 68ms (Views: 6.1ms | ActiveRecord: 61.0ms | Allocations: 5535)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 04:07:14 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (36.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:27
+  Rendered posts/_layout.html.erb (Duration: 0.7ms | Allocations: 335)
+  Rendered posts/index.html.erb within layouts/application (Duration: 40.1ms | Allocations: 1898)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 54ms (Views: 16.6ms | ActiveRecord: 36.7ms | Allocations: 7412)
+
+
+Started GET "/?t=1662002381110" for 172.17.0.1 at 2022-09-01 04:09:09 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662002381110"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:27
+  Rendered posts/_layout.html.erb (Duration: 0.7ms | Allocations: 335)
+  Rendered posts/index.html.erb within layouts/application (Duration: 14.7ms | Allocations: 1904)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.1ms | Allocations: 7423)
+
+

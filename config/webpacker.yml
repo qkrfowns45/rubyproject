@@ -94,3 +94,6 @@ production:
 
   # Cache manifest.json for performance
   cache_manifest: true
+  
+default: &default  
+source_path: app/frontend # Change here
