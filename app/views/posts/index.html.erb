@@ -1,12 +1,12 @@
 <%= stylesheet_link_tag    'application', media: 'all' %>
 
-<p id="notice"><%= notice %></p>
-<div id="header">
-	<div style="margin-left : 31px;">
-		<div>
+<!-- <p id="notice"><%= notice %></p> -->
+<div class="p-2" id="header">
+	<div class="d-flex px-5">
+		<div class="me-auto">
 			<h1 style="font-family : 'Black Han Sans'">NewBietop's Shop</h1>
 		</div>
-		<div style="text-align: right; margin-top: 10px; margin-right: 60px;">
+		<div style="text-align: right; margin-top: 10px;">
 			게시판
 			<% if user_signed_in? %>
 				<p> <%= current_user.email %> 님 안녕하세요. </p>	
