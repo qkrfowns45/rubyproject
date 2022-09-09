@@ -2017,3 +2017,964 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 303ms (Views: 221.3ms | ActiveRecord: 0.8ms | Allocations: 46763)
 
 
+Started GET "/?t=1662631297366" for 172.17.0.1 at 2022-09-08 10:01:27 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662631297366"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:29
+  Rendered posts/_layout.html.erb (Duration: 1.2ms | Allocations: 874)
+  Rendered posts/index.html.erb within layouts/application (Duration: 103.1ms | Allocations: 14259)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 194ms (Views: 177.8ms | ActiveRecord: 1.4ms | Allocations: 21162)
+
+
+Started GET "/?t=1662697247446" for 172.17.0.1 at 2022-09-09 04:20:47 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662697247446"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:29
+  Rendered posts/_layout.html.erb (Duration: 1.3ms | Allocations: 874)
+  Rendered posts/index.html.erb within layouts/application (Duration: 19.4ms | Allocations: 10367)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 161ms (Views: 94.1ms | ActiveRecord: 1.3ms | Allocations: 17233)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2022-09-09 04:47:22 +0000
+Cannot render console from 10.1.20.90! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering /usr/local/lib/ruby/gems/2.6.0/gems/devise-4.8.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/devise-4.8.1/app/views/devise/shared/_links.html.erb (Duration: 2.1ms | Allocations: 633)
+  Rendered /usr/local/lib/ruby/gems/2.6.0/gems/devise-4.8.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 283.2ms | Allocations: 34829)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 306ms (Views: 294.8ms | ActiveRecord: 0.6ms | Allocations: 46842)
+
+
+Started GET "/?t=1662697247446" for 172.17.0.1 at 2022-09-09 04:56:56 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662697247446"}
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 3517)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 5233)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    26:     </tr>
+    27:   </thead>
+    28:  <tbody>
+    29:     <% @posts.each do |post| %>
+    30:       <tr>
+    31:         <td><%= post.title %></td>
+    32:         <td><%= post.content %></td>
+  
+app/views/posts/index.html.erb:29
+Started GET "/?t=1662697247446" for 172.17.0.1 at 2022-09-09 04:57:46 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662697247446"}
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 64.7ms | Allocations: 3246)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 0.0ms | Allocations: 4916)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    26:     </tr>
+    27:   </thead>
+    28:  <tbody>
+    29:     <% @posts.each do |post| %>
+    30:       <tr>
+    31:         <td><%= post.title %></td>
+    32:         <td><%= post.content %></td>
+  
+app/views/posts/index.html.erb:29
+Started GET "/?t=1662697247446" for 172.17.0.1 at 2022-09-09 04:57:50 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662697247446"}
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2786)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.0ms | Allocations: 3421)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    26:     </tr>
+    27:   </thead>
+    28:  <tbody>
+    29:     <% @posts.each do |post| %>
+    30:       <tr>
+    31:         <td><%= post.title %></td>
+    32:         <td><%= post.content %></td>
+  
+app/views/posts/index.html.erb:29
+Started GET "/?t=1662697247446" for 172.17.0.1 at 2022-09-09 04:57:55 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662697247446"}
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/_layout.html.erb (Duration: 1.2ms | Allocations: 826)
+  Rendered posts/index.html.erb within layouts/application (Duration: 25.4ms | Allocations: 2872)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.0ms | Allocations: 7662)
+
+
+Started GET "/post" for 172.17.0.1 at 2022-09-09 04:57:58 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/post"):
+  
+actionpack (6.0.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.0.5.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/?t=1662699535220" for 172.17.0.1 at 2022-09-09 04:58:55 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662699535220"}
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/_layout.html.erb (Duration: 1.2ms | Allocations: 858)
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 5552)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 99ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 12157)
+
+
+Started GET "/post" for 172.17.0.1 at 2022-09-09 04:58:57 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/post"):
+  
+actionpack (6.0.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.0.5.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/post" for 172.17.0.1 at 2022-09-09 04:59:53 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/post"):
+  
+actionpack (6.0.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.0.5.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/post" for 172.17.0.1 at 2022-09-09 05:00:49 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/post"):
+  
+actionpack (6.0.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.0.5.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/?t=1662699655728" for 172.17.0.1 at 2022-09-09 05:00:55 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662699655728"}
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/_layout.html.erb (Duration: 46.3ms | Allocations: 710)
+  Rendered posts/index.html.erb within layouts/application (Duration: 48.6ms | Allocations: 2350)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 54ms (Views: 53.2ms | ActiveRecord: 0.0ms | Allocations: 6404)
+
+
+Started GET "/post" for 172.17.0.1 at 2022-09-09 05:01:01 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/post"):
+  
+actionpack (6.0.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.0.5.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/?t=1662699655728" for 172.17.0.1 at 2022-09-09 05:01:17 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662699655728"}
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/_layout.html.erb (Duration: 61.4ms | Allocations: 214)
+  Rendered posts/index.html.erb within layouts/application (Duration: 63.7ms | Allocations: 1812)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 68ms (Views: 67.3ms | ActiveRecord: 0.0ms | Allocations: 5438)
+
+
+Started GET "/?t=1662699655728" for 172.17.0.1 at 2022-09-09 05:21:47 +0000
+Cannot render console from 10.1.20.142! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662699655728"}
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/_layout.html.erb (Duration: 0.3ms | Allocations: 214)
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1811)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 5430)
+
+
+Started GET "/post" for 172.17.0.1 at 2022-09-09 05:21:49 +0000
+Cannot render console from 10.1.20.142! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/post"):
+  
+actionpack (6.0.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.0.5.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/post" for 172.17.0.1 at 2022-09-09 05:23:34 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/post"):
+  
+actionpack (6.0.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.0.5.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/post" for 172.17.0.1 at 2022-09-09 05:23:36 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/post"):
+  
+actionpack (6.0.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.0.5.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/?t=1662701061995" for 172.17.0.1 at 2022-09-09 05:24:23 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662701061995"}
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/_layout.html.erb (Duration: 1.5ms | Allocations: 858)
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.7ms | Allocations: 5552)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 97ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 12491)
+
+
+Started GET "/posts/post" for 172.17.0.1 at 2022-09-09 05:24:25 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"post"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:71:in `set_post'
+Completed 404 Not Found in 17ms (ActiveRecord: 10.8ms | Allocations: 2473)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=post):
+  
+app/controllers/posts_controller.rb:71:in `set_post'
+Started GET "/posts/post/1" for 172.17.0.1 at 2022-09-09 05:25:13 +0000
+Cannot render console from 10.1.20.202! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/posts/post/1"):
+  
+actionpack (6.0.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.5.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.5.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.5.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.0.5.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/?t=1662701248153" for 172.17.0.1 at 2022-09-09 05:27:28 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662701248153"}
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/_layout.html.erb (Duration: 1.7ms | Allocations: 826)
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2904)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 85ms (Views: 83.3ms | ActiveRecord: 0.0ms | Allocations: 8017)
+
+
+Started GET "/posts/board" for 172.17.0.1 at 2022-09-09 05:27:30 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"board"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:71:in `set_post'
+Completed 404 Not Found in 27ms (ActiveRecord: 23.9ms | Allocations: 2223)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=board):
+  
+app/controllers/posts_controller.rb:71:in `set_post'
+Started GET "/posts/new" for 172.17.0.1 at 2022-09-09 05:27:47 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 109.7ms | Allocations: 33095)
+  Rendered posts/new.html.erb within layouts/application (Duration: 193.1ms | Allocations: 33456)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 202ms (Views: 197.1ms | ActiveRecord: 0.0ms | Allocations: 40959)
+
+
+Started GET "/posts/board" for 172.17.0.1 at 2022-09-09 05:27:52 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"board"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:71:in `set_post'
+Completed 404 Not Found in 19ms (ActiveRecord: 0.1ms | Allocations: 1365)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=board):
+  
+app/controllers/posts_controller.rb:71:in `set_post'
+Started GET "/?t=1662701391331" for 172.17.0.1 at 2022-09-09 05:29:51 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662701391331"}
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/_layout.html.erb (Duration: 0.8ms | Allocations: 335)
+  Rendered posts/index.html.erb within layouts/application (Duration: 59.9ms | Allocations: 2377)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 65ms (Views: 64.5ms | ActiveRecord: 0.0ms | Allocations: 7223)
+
+
+Started GET "/posts/board" for 172.17.0.1 at 2022-09-09 05:29:53 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"board"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:71:in `set_post'
+Completed 404 Not Found in 44ms (ActiveRecord: 0.1ms | Allocations: 1349)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=board):
+  
+app/controllers/posts_controller.rb:71:in `set_post'
+Started GET "/?t=1662701565724" for 172.17.0.1 at 2022-09-09 05:32:46 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662701565724"}
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/_layout.html.erb (Duration: 0.8ms | Allocations: 709)
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2325)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 6318)
+
+
+Started GET "/posts/board" for 172.17.0.1 at 2022-09-09 05:32:48 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"board"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:71:in `set_post'
+Completed 404 Not Found in 36ms (ActiveRecord: 33.6ms | Allocations: 2209)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=board):
+  
+app/controllers/posts_controller.rb:71:in `set_post'
+Started GET "/?t=1662701620637" for 172.17.0.1 at 2022-09-09 05:33:40 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662701620637"}
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/_layout.html.erb (Duration: 0.7ms | Allocations: 335)
+  Rendered posts/index.html.erb within layouts/application (Duration: 83.8ms | Allocations: 2384)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 89ms (Views: 88.2ms | ActiveRecord: 0.0ms | Allocations: 7242)
+
+
+Started GET "/posts/new" for 172.17.0.1 at 2022-09-09 05:33:42 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 47.3ms | Allocations: 1229)
+  Rendered posts/new.html.erb within layouts/application (Duration: 48.0ms | Allocations: 1586)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 57ms (Views: 51.9ms | ActiveRecord: 0.0ms | Allocations: 8898)
+
+
+Started GET "/?t=1662702766682" for 172.17.0.1 at 2022-09-09 05:52:46 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662702766682"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered posts/index.html.erb within layouts/application (Duration: 2098.5ms | Allocations: 280874)
+Completed 500 Internal Server Error in 2101ms (ActiveRecord: 0.4ms | Allocations: 282572)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `board_post_path' for #<#<Class:0x00007ff1e00fe888>:0x00007ff1e00fc4e8>):
+     7: 			<h1 style="font-family : 'Black Han Sans'">NewBietop's Shop</h1>
+     8: 		</div>
+     9: 		<div style="text-align: right; margin-top: 10px;">
+    10: 			<%= link_to "게시판", board_post_path %> |
+    11: 			<% if user_signed_in? %>
+    12: 				<p> <%= current_user.email %> 님 안녕하세요. </p>	
+    13: 				<%= link_to "로그아웃", destroy_user_session_path, method: :delete %>
+  
+app/views/posts/index.html.erb:10
+Started GET "/?t=1662704437862" for 172.17.0.1 at 2022-09-09 06:20:38 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662704437862"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (69.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (70.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered posts/index.html.erb within layouts/application (Duration: 2182.3ms | Allocations: 285410)
+Completed 500 Internal Server Error in 2197ms (ActiveRecord: 140.5ms | Allocations: 289183)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `board_post_path' for #<#<Class:0x000055ae8e1d08c0>:0x000055ae8e1d6ce8>):
+     7: 			<h1 style="font-family : 'Black Han Sans'">NewBietop's Shop</h1>
+     8: 		</div>
+     9: 		<div style="text-align: right; margin-top: 10px;">
+    10: 			<%= link_to "게시판", board_post_path %> |
+    11: 			<% if user_signed_in? %>
+    12: 				<p> <%= current_user.email %> 님 안녕하세요. </p>	
+    13: 				<%= link_to "로그아웃", destroy_user_session_path, method: :delete %>
+  
+app/views/posts/index.html.erb:10
+Started GET "/?t=1662704454024" for 172.17.0.1 at 2022-09-09 06:20:54 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662704454024"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered posts/index.html.erb within layouts/application (Duration: 2005.8ms | Allocations: 278356)
+Completed 500 Internal Server Error in 2007ms (ActiveRecord: 0.3ms | Allocations: 279047)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `board_post_path' for #<#<Class:0x000055ae8e1d08c0>:0x00007f38c23a6fe0>):
+     7: 			<h1 style="font-family : 'Black Han Sans'">NewBietop's Shop</h1>
+     8: 		</div>
+     9: 		<div style="text-align: right; margin-top: 10px;">
+    10: 			<%= link_to "게시판", board_post_path %> |
+    11: 			<% if user_signed_in? %>
+    12: 				<p> <%= current_user.email %> 님 안녕하세요. </p>	
+    13: 				<%= link_to "로그아웃", destroy_user_session_path, method: :delete %>
+  
+app/views/posts/index.html.erb:10
+Started GET "/?t=1662704503568" for 172.17.0.1 at 2022-09-09 06:21:43 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662704503568"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered posts/index.html.erb within layouts/application (Duration: 794.1ms | Allocations: 141596)
+Completed 500 Internal Server Error in 797ms (ActiveRecord: 0.2ms | Allocations: 143320)
+
+
+  
+ActionView::Template::Error (undefined method `board_post_path' for #<#<Class:0x000055ae8e2c0028>:0x000055ae8e2c65b8>):
+     7: 			<h1 style="font-family : 'Black Han Sans'">NewBietop's Shop</h1>
+     8: 		</div>
+     9: 		<div style="text-align: right; margin-top: 10px;">
+    10: 			<%= link_to "게시판", board_post_path(@post)%> |
+    11: 			<% if user_signed_in? %>
+    12: 				<p> <%= current_user.email %> 님 안녕하세요. </p>	
+    13: 				<%= link_to "로그아웃", destroy_user_session_path, method: :delete %>
+  
+app/views/posts/index.html.erb:10
+Started GET "/?t=1662705171831" for 172.17.0.1 at 2022-09-09 06:32:51 +0000
+Cannot render console from 10.1.21.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662705171831"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (69.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered posts/index.html.erb within layouts/application (Duration: 2213.1ms | Allocations: 285434)
+Completed 500 Internal Server Error in 2311ms (ActiveRecord: 70.9ms | Allocations: 289211)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `board_post_path' for #<#<Class:0x0000561b2b8b21c0>:0x0000561b2b8b02d0>):
+     7: 			<h1 style="font-family : 'Black Han Sans'">NewBietop's Shop</h1>
+     8: 		</div>
+     9: 		<div style="text-align: right; margin-top: 10px;">
+    10: 			<%= link_to "게시판", board_post_path %> |
+    11: 			<% if user_signed_in? %>
+    12: 				<p> <%= current_user.email %> 님 안녕하세요. </p>	
+    13: 				<%= link_to "로그아웃", destroy_user_session_path, method: :delete %>
+  
+app/views/posts/index.html.erb:10
+Started GET "/posts.new" for 172.17.0.1 at 2022-09-09 06:34:46 +0000
+Cannot render console from 10.1.20.90! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as 
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (39.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered posts/index.html.erb within layouts/application (Duration: 1952.4ms | Allocations: 278555)
+Completed 500 Internal Server Error in 1954ms (ActiveRecord: 39.3ms | Allocations: 279448)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `board_post_path' for #<#<Class:0x0000561b2b8b21c0>:0x00007ff7e2616f48>):
+     7: 			<h1 style="font-family : 'Black Han Sans'">NewBietop's Shop</h1>
+     8: 		</div>
+     9: 		<div style="text-align: right; margin-top: 10px;">
+    10: 			<%= link_to "게시판", board_post_path %> |
+    11: 			<% if user_signed_in? %>
+    12: 				<p> <%= current_user.email %> 님 안녕하세요. </p>	
+    13: 				<%= link_to "로그아웃", destroy_user_session_path, method: :delete %>
+  
+app/views/posts/index.html.erb:10
+Started GET "/posts/new" for 172.17.0.1 at 2022-09-09 06:34:56 +0000
+Cannot render console from 10.1.20.90! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 265.6ms | Allocations: 38285)
+  Rendered posts/new.html.erb within layouts/application (Duration: 266.4ms | Allocations: 38652)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 281ms (Views: 279.5ms | ActiveRecord: 0.0ms | Allocations: 43149)
+
+
+Started GET "/posts/board" for 172.17.0.1 at 2022-09-09 06:35:00 +0000
+Cannot render console from 10.1.20.90! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"board"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:71:in `set_post'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1810)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=board):
+  
+app/controllers/posts_controller.rb:71:in `set_post'
+Started GET "/?t=1662706991315" for 172.17.0.1 at 2022-09-09 07:03:20 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662706991315"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered posts/index.html.erb within layouts/application (Duration: 2140.2ms | Allocations: 280537)
+Completed 500 Internal Server Error in 2142ms (ActiveRecord: 0.4ms | Allocations: 281199)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `board_post_path' for #<#<Class:0x0000561b2b8b21c0>:0x00007ff7e24de590>):
+     7: 			<h1 style="font-family : 'Black Han Sans'">NewBietop's Shop</h1>
+     8: 		</div>
+     9: 		<div style="text-align: right; margin-top: 10px;">
+    10: 			<%= link_to "게시판", board_post_path %> |
+    11: 			<% if user_signed_in? %>
+    12: 				<p> <%= current_user.email %> 님 안녕하세요. </p>	
+    13: 				<%= link_to "로그아웃", destroy_user_session_path, method: :delete %>
+  
+app/views/posts/index.html.erb:10
+Started GET "/?t=1662706991315" for 172.17.0.1 at 2022-09-09 07:08:51 +0000
+Cannot render console from 10.1.20.142! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662706991315"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered posts/index.html.erb within layouts/application (Duration: 1999.6ms | Allocations: 280862)
+Completed 500 Internal Server Error in 2003ms (ActiveRecord: 0.4ms | Allocations: 282586)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `show_post_path' for #<#<Class:0x0000561b2b998648>:0x0000561b2b9a24b8>
+Did you mean?  posts_path):
+     7: 			<h1 style="font-family : 'Black Han Sans'">NewBietop's Shop</h1>
+     8: 		</div>
+     9: 		<div style="text-align: right; margin-top: 10px;">
+    10: 			<%= link_to "게시판", show_post_path %> |
+    11: 			<% if user_signed_in? %>
+    12: 				<p> <%= current_user.email %> 님 안녕하세요. </p>	
+    13: 				<%= link_to "로그아웃", destroy_user_session_path, method: :delete %>
+  
+app/views/posts/index.html.erb:10
+Started GET "/?t=1662706991315" for 172.17.0.1 at 2022-09-09 07:10:40 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662706991315"}
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/_layout.html.erb (Duration: 1.2ms | Allocations: 838)
+  Rendered posts/index.html.erb within layouts/application (Duration: 78.4ms | Allocations: 2901)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 84ms (Views: 82.9ms | ActiveRecord: 0.0ms | Allocations: 7992)
+
+
+Started GET "/posts/board" for 172.17.0.1 at 2022-09-09 07:10:43 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"board"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:71:in `set_post'
+Completed 404 Not Found in 66ms (ActiveRecord: 63.5ms | Allocations: 2221)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=board):
+  
+app/controllers/posts_controller.rb:71:in `set_post'
+Started GET "/?t=1662706991315" for 172.17.0.1 at 2022-09-09 07:10:50 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662706991315"}
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/_layout.html.erb (Duration: 68.2ms | Allocations: 218)
+  Rendered posts/index.html.erb within layouts/application (Duration: 70.1ms | Allocations: 1824)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 74ms (Views: 73.0ms | ActiveRecord: 0.0ms | Allocations: 5450)
+
+
+Started GET "/posts/board" for 172.17.0.1 at 2022-09-09 07:12:20 +0000
+Cannot render console from 10.1.21.16! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"board"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:71:in `set_post'
+Completed 404 Not Found in 27ms (ActiveRecord: 0.1ms | Allocations: 1353)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=board):
+  
+app/controllers/posts_controller.rb:71:in `set_post'
+Started GET "/posts/board" for 172.17.0.1 at 2022-09-09 07:13:27 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"board"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:71:in `set_post'
+Completed 404 Not Found in 84ms (ActiveRecord: 0.1ms | Allocations: 1356)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=board):
+  
+app/controllers/posts_controller.rb:71:in `set_post'
+Started GET "/posts/board" for 172.17.0.1 at 2022-09-09 07:16:56 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"board"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:72:in `set_post'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.8ms | Allocations: 2409)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=board):
+  
+app/controllers/posts_controller.rb:72:in `set_post'
+Started GET "/?t=1662708026762" for 172.17.0.1 at 2022-09-09 07:20:26 +0000
+Cannot render console from 10.1.20.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Parameters: {"t"=>"1662708026762"}
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/_layout.html.erb (Duration: 1.4ms | Allocations: 872)
+  Rendered posts/index.html.erb within layouts/application (Duration: 3781.1ms | Allocations: 16280)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3799ms (Views: 3787.3ms | ActiveRecord: 0.0ms | Allocations: 23126)
+
+
