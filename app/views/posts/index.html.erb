@@ -1,8 +1,8 @@
-<%= stylesheet_link_tag    'application', media: 'all' %>
+<!-- <%= stylesheet_link_tag    'application', media: 'all' %> -->
 
 <!-- <p id="notice"><%= notice %></p> -->
 <div class="p-2" id="header">
-	<div class="d-flex px-5">
+	<div class="d-flex px-5" style="text-decoration : underline;">
 		<div class="me-auto">
 			<h1 style="font-family : 'Black Han Sans'">NewBietop's Shop</h1>
 		</div>
@@ -17,12 +17,27 @@
 		</div>
 	</div>
 </div>
-<!-- -->
 
-<!-- <br> -->
-
-<!--<%= link_to 'New Post', new_post_path %> -->
 <div id="body">
+	<div class="px-5" id = "left-side" style="font-family : 'Black Han Sans'; font-size : 23px;">
+		category
+		<li class="category1">
+			Man
+			<ul class="sub1" style="display:none">
+				<li>Outer</li>
+				<li>Top</li>
+				<li>Bottom</li>
+			</ul>
+		</li>
+		<li class="category2">
+			Woman
+			<ul class="sub2" style="display:none">
+				<li>Outer</li>
+				<li>Top</li>
+				<li>Bottom</li>
+			</ul>
+		</li>
+	</div>
 	<div class="px-5">
 		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
 		  <div class="carousel-indicators">
@@ -52,5 +67,19 @@
 		</div>
 	</div>	
 </div>
-
-<%= render 'layout', post: @post %>
+<script>
+	$(".category1").click(function(){
+		if($(".sub1").is(":visible")){
+			$(".sub1").slideUp();
+		}else{
+			$(".sub1").slideDown();
+		}
+	})
+	$(".category2").click(function(){
+		if($(".sub2").is(":visible")){
+			$(".sub2").slideUp();
+		}else{
+			$(".sub2").slideDown();
+		}
+	})
+</script>
